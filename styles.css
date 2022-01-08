@@ -1,0 +1,46 @@
+body{
+margin: 0%;
+}
+.nav-bar{
+    background-color: aqua;
+    border-color: brown;
+
+}
+
+.intro{
+    /* height:500px;
+    border-color: bisque;
+    background-color:rgb(177, 234, 238);
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 2fr; */
+    animation: scroll 70s linear infinite;
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+
+}
+
+.cell{
+    border: 10px solid;
+    padding: 10px;
+    text-align: center;
+    
+}
+.cell-name{
+    color: red;
+   
+}   
+
+.cell-about{
+   color:blue
+}
+
+.hello{
+   
+}
+
+.pics{
+    width: 100%;
+    display: block;
+  }
