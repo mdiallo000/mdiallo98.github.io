@@ -1,46 +1,182 @@
-body{
-margin: 0%;
-}
-.nav-bar{
-    background-color: aqua;
-    border-color: brown;
+/* 
+==============
+Variables
+==============
 
-}
-
-.intro{
-    /* height:500px;
-    border-color: bisque;
-    background-color:rgb(177, 234, 238);
-    display: grid;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 2fr; */
-    animation: scroll 70s linear infinite;
-    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
-    color: rgb(255, 255, 255);
-    height: 100vh;
-
-}
-
-.cell{
-    border: 10px solid;
-    padding: 10px;
-    text-align: center;
-    
-}
-.cell-name{
-    color: red;
-   
-}   
-
-.cell-about{
-   color:blue
-}
-
-.hello{
-   
-}
-
-.pics{
-    width: 100%;
-    display: block;
+*/
+:root{
+    --primaryColor: #f15025;
+    --mainBlack: #222;
+    --mainWhite: #fff;
+    --offWhite:#f7f7f7;
+    --darkGrey: #afafaf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.2rem;
   }
+  
+  /* 
+  ==============
+  Global Styles
+  ==============
+  
+  */
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  body {
+    font-family: "Fira Code", monospace;
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    line-height: 1.5;
+  
+  
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    display:block;
+    width:100%;
+  }
+  
+  h1,h2,h3{
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1.25rem;
+  
+  }
+  
+  h1{
+    font: size 3rem;
+  }
+  
+  h2{
+    margin-bottom: 0;
+  }
+  
+  p{
+    font-weight: 300;
+    font-size: 0.7rem;
+    line-height: 2;
+  }
+  .btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border: 3px solid var(--primaryColor);
+    color: var(--primaryColor);
+    margin: 3rem;
+    transition: var(--mainTransition);
+  }
+  
+  .btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+     
+  }
+  
+  /* 
+  ==============
+  Global Styles
+  ==============
+  
+  */
+  .main-navbar{
+    background-color: var(--darkGrey);
+    padding-inline-end: 0 2rem;
+    
+  }
+  
+  .main-navbar li{
+    list-style: none;
+  
+  }
+  
+  .main-navbar a{
+     text-transform: capitalize;
+      display: block;
+      padding: 1rem 0;
+      color: var(--primaryColor);
+      letter-spacing: var(--mainSpacing);
+      transition: var(--mainTransition);
+  }
+  
+  .main-navbar a:hover{
+    color: var(--mainBlack);
+  
+  }
+  
+  @media screen and (min-width: 992px) {
+  
+    .main-navbar ul {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+  
+    
+    }
+    .main-navbar a{
+      text-align: center;
+    }
+    
+  
+  }
+  
+  /* 
+  ==============
+  hero
+  ==============
+  
+  */
+  
+  .hero-header{
+    min-height: 100vh;
+    background: var(--primaryColor);
+    color:var(--mainWhite) ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+    .hero-banner p{
+      width: 80%;
+    max-width: 560px;
+    font-size: 1rem;
+  
+  
+  }
+  
+  @media screen and (max-width:600px) {
+    
+    .hero-banner{
+      padding: 0 3rem;
+  
+  
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero-header{
+        background:linear-gradient(rgba(241,80,37,0.75),rgba(0,0,0,0.75)) ,url("./images/image-2.jpeg") center/cover fixed no-repeat;
+  
+  
+    }
+    
+  }
+  
+  /* 
+  ==============
+  cards
+  ==============
+  
+  */
