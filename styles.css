@@ -1,0 +1,228 @@
+/* 
+==============
+Variables
+==============
+
+*/
+:root{
+    --primaryColor: #f15025;
+    --mainBlack: #222;
+    --mainWhite: #fff;
+    --offWhite:#f7f7f7;
+    --darkGrey: #afafaf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.2rem;
+    --mainYellow: #e8f48c;
+    --brighterYellow:#fdff00;
+    --accenturePurple:#bf00af;
+  }
+  
+  /* 
+  ==============
+  Global Styles
+  ==============
+  
+  */
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  body {
+    font-family: "Fira Code", monospace;
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    line-height: 1.5;
+  
+  
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    display:block;
+    width:100%;
+  }
+  
+  h1,h2,h3{
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1.25rem;
+  
+  }
+  
+  h1{
+    font: size 3rem;
+  }
+  
+  h2{
+    margin-bottom: 0;
+  }
+  
+  p{
+    font-weight: 300;
+    font-size: 0.7rem;
+    line-height: 2;
+  }
+  .btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border: 3px solid var(--primaryColor);
+    color: var(--primaryColor);
+    margin: 3rem;
+    transition: var(--mainTransition);
+  }
+  
+  .btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+     
+  }
+  
+  /* 
+  ==============
+  Global Styles
+  ==============
+  
+  */
+  .main-navbar{
+    background-color: var(--darkGrey);
+    padding-inline-end: 0 2rem;
+    
+  }
+  
+  .main-navbar li{
+    list-style: none;
+  
+  }
+  
+  .main-navbar a{
+     text-transform: capitalize;
+      display: block;
+      padding: 1rem 0;
+      color: var(--primaryColor);
+      letter-spacing: var(--mainSpacing);
+      transition: var(--mainTransition);
+  }
+  
+  .main-navbar a:hover{
+    color: var(--mainBlack);
+  
+  }
+  
+  @media screen and (min-width: 992px) {
+  
+    .main-navbar ul {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+  
+    
+    }
+    .main-navbar a{
+      text-align: center;
+    }
+    
+  
+  }
+  
+  /* 
+  ==============
+  hero
+  ==============
+  
+  */
+  
+  .hero-header{
+    min-height: 100vh;
+    background: var(--primaryColor);
+    color:var(--mainWhite) ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+    .hero-banner p{
+      width: 80%;
+    max-width: 560px;
+    font-size: 1rem;
+  
+  
+  }
+  
+  @media screen and (max-width:600px) {
+    
+    .hero-banner{
+      padding: 0 3rem;
+  
+  
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero-header{
+        background:linear-gradient(rgba(241,80,37,0.75),rgba(0,0,0,0.75)) ,url("./images/image-2.jpeg") center/cover fixed no-repeat;
+  
+  
+    }
+    
+  }
+  
+  /* 
+  ==============
+  about
+  ==============
+  
+  */
+
+  .about-header{
+    min-height: 100vh;
+    background: var(--primaryColor);
+    color:var(--mainBlack) ;
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+   
+  }
+  
+  
+    .about-banner p{
+      width: 80%;
+    max-width: 560px;
+    font-size: 1rem;
+    background-color: #afafaf;
+  }
+
+  .about-banner h3{
+      text-align: center;
+  }
+
+
+  
+  @media screen and (max-width:600px) {
+    
+    .about-banner{
+      padding: 0 3rem;
+  
+  
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .about-header{
+        background:linear-gradient(rgba(241, 238, 37, 0.075),rgba(0,0,0,0.75)) ,url("assests/image-4.jpeg") center/cover fixed no-repeat;
+  
+  
+    }
+    
+  }
+  
