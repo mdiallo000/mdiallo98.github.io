@@ -226,3 +226,16 @@ Variables
     
   }
   
+
+/* 
+====================
+Projects
+====================
+*/
+
+.project-container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+
+}
